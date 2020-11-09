@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>SerialApp/CoordinatorEB</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>154</Column0><Column1>1</Column1><Column2>44</Column2><Column3>14677020</Column3></ColumnWidths>
+      <PreferedWindows><Position>1</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>SourceBrowser</Factory></Window></Windows></PreferedWindows></Workspace>
+      <Find-in-Files>
+        
+        
+        
+      <ColumnWidth0>875</ColumnWidth0><ColumnWidth1>70</ColumnWidth1><ColumnWidth2>850</ColumnWidth2></Find-in-Files>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1035</ColumnWidth1><ColumnWidth2>276</ColumnWidth2><ColumnWidth3>69</ColumnWidth3></Build>
+      <TerminalIO/>
+    <Debug-Log/><SourceBrowser><PreferedWindows><Position>1</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Workspace</Factory></Window></Windows></PreferedWindows></SourceBrowser></Static>
+    <Windows>
+      
+      
+    <Wnd1>
+        <Tabs>
+          
+          <Tab>
+            <Identity>TabID-18856-14048</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab>
+            <Identity>TabID-8338-13836</Identity>
+            <TabName>Find in Files</TabName>
+            <Factory>Find-in-Files</Factory>
+            <Session/>
+          </Tab><Tab><Identity>TabID-23831-11646</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1><Wnd2><Tabs><Tab><Identity>TabID-828-14205</Identity><TabName>Workspace</TabName><Factory>Workspace</Factory><Session><NodeDict><ExpandedNode>SerialApp</ExpandedNode><ExpandedNode>SerialApp/Output</ExpandedNode><ExpandedNode>SerialApp/Tools</ExpandedNode><ExpandedNode>SerialApp/ZMain</ExpandedNode></NodeDict></Session></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd2></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>F:\&#x5e73;&#x53F0;&#x8D44;&#x6599;\FS_11C14&#x7269;&#x8054;&#x7F51;&#x5F00;&#x53D1;&#x5e73;&#x53F0;&#x914D;&#x5957;&#x8D44;&#x6599;V6.0\&#x70e7;&#x5199;&#x955C;&#x50CF;\ZigBee\ZigBee\ZStack-CC2530-2.3.0-1.4.0\Projects\zstack\ZMain\TI2530DB\ZMain.c</Filename><XPos>0</XPos><YPos>104</YPos><SelStart>4047</SelStart><SelEnd>4047</SelEnd></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>F:\&#x5e73;&#x53F0;&#x8D44;&#x6599;\FS_11C14&#x7269;&#x8054;&#x7F51;&#x5F00;&#x53D1;&#x5e73;&#x53F0;&#x914D;&#x5957;&#x8D44;&#x6599;V6.0\&#x70e7;&#x5199;&#x955C;&#x50CF;\ZigBee\ZigBee\ZStack-CC2530-2.3.0-1.4.0\Projects\zstack\Tools\CC2530DB\f8wConfig.cfg</Filename><XPos>0</XPos><YPos>42</YPos><SelStart>1898</SelStart><SelEnd>1898</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-01b3ca10><key>iaridepm.enu1</key></Toolbar-01b3ca10></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>492</Bottom><Right>236</Right><x>-2</x><y>-2</y><xscreen>81</xscreen><yscreen>90</yscreen><sizeHorzCX>59297</sizeHorzCX><sizeHorzCY>129310</sizeHorzCY><sizeVertCX>174231</sizeVertCX><sizeVertCY>709770</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>159</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>161</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>231322</sizeHorzCY><sizeVertCX>59297</sizeVertCX><sizeVertCY>129310</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

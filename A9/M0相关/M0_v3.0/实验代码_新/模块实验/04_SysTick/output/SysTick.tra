@@ -1,0 +1,23 @@
+*** Creating Trace Output File '.\output\SysTick.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\output\startup_lpc11xx.o"'
+### List of Objects: adding '".\output\core_cm0.o"'
+### List of Objects: adding '".\output\system_lpc11xx.o"'
+### List of Objects: adding '".\output\gpio.o"'
+### List of Objects: adding '".\output\main.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M0 ".\output\startup_lpc11xx.o" ".\output\core_cm0.o" ".\output\system_lpc11xx.o" ".\output\gpio.o" ".\output\main.o" --strict --scatter ".\output\SysTick.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\listing\SysTick.map" -o ".\output\SysTick.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\output\SysTick.axf'
+### ADS-LD Command File: '.\output\SysTick.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\output\SysTick.lnp', Handle=0x00000298
+### Writing '.lnp' file
+### ADS-LD Command file '.\output\SysTick.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

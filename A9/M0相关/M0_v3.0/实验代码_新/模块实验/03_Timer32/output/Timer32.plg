@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Documents and Settings\Administrator\桌面\FS_11C14光盘\实验代码_新\模块实验\03_Timer32\project.uvproj
+Project File Date:  11/24/2011
+
+<h2>Output:</h2>
+Load "C:\\Documents and Settings\\Administrator\\桌面\\FS_11C14光盘\\实验代码_新\\模块实验\\03_Timer32\\output\\Timer32.AXF" 
+Erasing Done.
+Programming Done: 10.99 KByte/s
+Verify Done.
+Build target 'Timer32'
+assembling startup_LPC11xx.s...
+compiling core_cm0.c...
+compiling system_LPC11xx.c...
+compiling gpio.c...
+compiling timer32.c...
+compiling main.c...
+linking...
+Program Size: Code=3440 RO-data=252 RW-data=76 ZI-data=612  
+FromELF: creating hex file...
+".\output\Timer32.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Administrator\\桌面\\FS_11C14光盘\\实验代码_新\\模块实验\\03_Timer32\\output\\Timer32.AXF" 
+Erasing Done.
+Programming Done: 11.49 KByte/s
+Verify Done.

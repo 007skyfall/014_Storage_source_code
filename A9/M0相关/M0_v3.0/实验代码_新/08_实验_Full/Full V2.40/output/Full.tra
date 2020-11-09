@@ -1,0 +1,45 @@
+*** Creating Trace Output File '.\output\Full.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\output\startup_lpc11xx.o"'
+### List of Objects: adding '".\output\core_cm0.o"'
+### List of Objects: adding '".\output\system_lpc11xx.o"'
+### List of Objects: adding '".\output\clkconfig.o"'
+### List of Objects: adding '".\output\gpio.o"'
+### List of Objects: adding '".\output\uart.o"'
+### List of Objects: adding '".\output\retarget.o"'
+### List of Objects: adding '".\output\timer32.o"'
+### List of Objects: adding '".\output\ssp.o"'
+### List of Objects: adding '".\output\i2c.o"'
+### List of Objects: adding '".\output\can.o"'
+### List of Objects: adding '".\output\adc.o"'
+### List of Objects: adding '".\output\tools.o"'
+### List of Objects: adding '".\output\key.o"'
+### List of Objects: adding '".\output\seg7led.o"'
+### List of Objects: adding '".\output\oled2864.o"'
+### List of Objects: adding '".\output\temp_hum.o"'
+### List of Objects: adding '".\output\light.o"'
+### List of Objects: adding '".\output\acc.o"'
+### List of Objects: adding '".\output\rfid.o"'
+### List of Objects: adding '".\output\spi_uart.o"'
+### List of Objects: adding '".\output\main.o"'
+### List of Objects: adding '".\output\can_pgm.o"'
+### List of Objects: adding '".\output\menu.o"'
+### List of Objects: adding '".\output\sensor.o"'
+### List of Objects: adding '".\output\led_spk_fan.o"'
+### List of Objects: adding '".\output\lpc11c14_it.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M0 ".\output\startup_lpc11xx.o" ".\output\core_cm0.o" ".\output\system_lpc11xx.o" ".\output\clkconfig.o" ".\output\gpio.o" ".\output\uart.o" ".\output\retarget.o" ".\output\timer32.o" ".\output\ssp.o" ".\output\i2c.o" ".\output\can.o" ".\output\adc.o" ".\output\tools.o" ".\output\key.o" ".\output\seg7led.o" ".\output\oled2864.o" ".\output\temp_hum.o" ".\output\light.o" ".\output\acc.o" ".\output\rfid.o" ".\output\spi_uart.o" ".\output\main.o" ".\output\can_pgm.o" ".\output\menu.o" ".\output\sensor.o" ".\output\led_spk_fan.o" ".\output\lpc11c14_it.o" --strict --scatter ".\output\Full.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\listing\Full.map" -o ".\output\Full.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\output\Full.axf'
+### ADS-LD Command File: '.\output\Full.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\output\Full.lnp', Handle=0x00000640
+### Writing '.lnp' file
+### ADS-LD Command file '.\output\Full.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

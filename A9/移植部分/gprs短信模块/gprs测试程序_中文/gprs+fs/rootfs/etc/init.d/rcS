@@ -1,0 +1,5 @@
+#!/bin/sh
+# This is the first script called by init process
+/bin/mount -a
+/bin/udevd --daemon
+/bin/udevstart

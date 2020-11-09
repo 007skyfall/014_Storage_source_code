@@ -1,0 +1,21 @@
+Dependencies for Project 'project', Target 'GPIO': (DO NOT MODIFY !)
+F (..\Lib_MCU\src\startup_LPC11xx.s)(0x53CB0FCA)(--cpu Cortex-M0 -g --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC11xx --list ".\listing\startup_LPC11xx.lst" --xref -o ".\output\startup_LPC11xx.o" --depend ".\output\startup_LPC11xx.d")
+F (..\Lib_MCU\src\core_cm0.c)(0x53CB0FCA)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I..\Lib_MCU\inc -I..\Lib_BSP\inc -I.\inc -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC11xx -o ".\output\core_cm0.o" --omf_browse ".\output\core_cm0.crf" --depend ".\output\core_cm0.d")
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+F (..\Lib_MCU\src\system_LPC11xx.c)(0x53CB0FCA)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I..\Lib_MCU\inc -I..\Lib_BSP\inc -I.\inc -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC11xx -o ".\output\system_lpc11xx.o" --omf_browse ".\output\system_lpc11xx.crf" --depend ".\output\system_lpc11xx.d")
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (..\Lib_MCU\inc\LPC11xx.h)(0x5406D8DA)
+I (..\Lib_MCU\inc\core_cm0.h)(0x53CB0FCA)
+I (..\Lib_MCU\inc\system_LPC11xx.h)(0x53CB0FCA)
+F (..\Lib_MCU\src\gpio.c)(0x53CB0FCA)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I..\Lib_MCU\inc -I..\Lib_BSP\inc -I.\inc -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC11xx -o ".\output\gpio.o" --omf_browse ".\output\gpio.crf" --depend ".\output\gpio.d")
+I (..\Lib_MCU\inc\LPC11xx.h)(0x5406D8DA)
+I (..\Lib_MCU\inc\core_cm0.h)(0x53CB0FCA)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (..\Lib_MCU\inc\system_LPC11xx.h)(0x53CB0FCA)
+I (..\Lib_MCU\inc\gpio.h)(0x53CB0FCA)
+F (.\src\main.c)(0x553C3DD2)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I..\Lib_MCU\inc -I..\Lib_BSP\inc -I.\inc -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC11xx -o ".\output\main.o" --omf_browse ".\output\main.crf" --depend ".\output\main.d")
+I (..\Lib_MCU\inc\lpc11xx.h)(0x5406D8DA)
+I (..\Lib_MCU\inc\core_cm0.h)(0x53CB0FCA)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (..\Lib_MCU\inc\system_LPC11xx.h)(0x53CB0FCA)
+I (..\Lib_MCU\inc\gpio.h)(0x53CB0FCA)

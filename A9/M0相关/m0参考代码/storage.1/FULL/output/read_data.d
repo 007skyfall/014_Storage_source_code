@@ -1,0 +1,15 @@
+.\output\read_data.o: src\read_data.c
+.\output\read_data.o: e:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\output\read_data.o: e:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\output\read_data.o: ..\Lib_MCU\inc\lpc11xx.h
+.\output\read_data.o: ..\Lib_MCU\inc\core_cm0.h
+.\output\read_data.o: e:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\output\read_data.o: ..\Lib_MCU\inc\system_LPC11xx.h
+.\output\read_data.o: .\inc\read_data.h
+.\output\read_data.o: ..\Lib_BSP\inc\temp_hum.h
+.\output\read_data.o: ..\Lib_BSP\inc\light.h
+.\output\read_data.o: ..\Lib_MCU\inc\i2c.h
+.\output\read_data.o: ..\Lib_BSP\inc\spi_uart.h
+.\output\read_data.o: ..\Lib_MCU\inc\gpio.h
+.\output\read_data.o: ..\Lib_MCU\inc\adc.h
+.\output\read_data.o: ..\Lib_BSP\inc\acc.h

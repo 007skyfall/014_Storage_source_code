@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <batchBuild>
+    <batchDefinition>
+      <name>Build All</name>
+      <member>
+        <project>GenericApp</project>
+        <configuration>CoordinatorEB</configuration>
+      </member>
+      <member>
+        <project>GenericApp</project>
+        <configuration>RouterEB</configuration>
+      </member>
+      <member>
+        <project>GenericApp</project>
+        <configuration>EndDeviceEB</configuration>
+      </member>
+      <member>
+        <project>GenericApp</project>
+        <configuration>CoordinatorEB-Pro</configuration>
+      </member>
+      <member>
+        <project>GenericApp</project>
+        <configuration>RouterEB-Pro</configuration>
+      </member>
+      <member>
+        <project>GenericApp</project>
+        <configuration>EndDeviceEB-Pro</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+

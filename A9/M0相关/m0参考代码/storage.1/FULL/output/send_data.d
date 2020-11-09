@@ -1,0 +1,10 @@
+.\output\send_data.o: src\send_data.c
+.\output\send_data.o: e:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\output\send_data.o: e:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\output\send_data.o: ..\Lib_MCU\inc\LPC11xx.h
+.\output\send_data.o: ..\Lib_MCU\inc\core_cm0.h
+.\output\send_data.o: e:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\output\send_data.o: ..\Lib_MCU\inc\system_LPC11xx.h
+.\output\send_data.o: .\inc\send_data.h
+.\output\send_data.o: ..\Lib_BSP\inc\spi_uart.h
+.\output\send_data.o: ..\Lib_MCU\inc\gpio.h

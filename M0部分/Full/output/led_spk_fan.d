@@ -1,0 +1,9 @@
+.\output\led_spk_fan.o: src\led_spk_fan.c
+.\output\led_spk_fan.o: ..\Lib_MCU\inc\lpc11xx.h
+.\output\led_spk_fan.o: ..\Lib_MCU\inc\core_cm0.h
+.\output\led_spk_fan.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\led_spk_fan.o: ..\Lib_MCU\inc\system_LPC11xx.h
+.\output\led_spk_fan.o: ..\Lib_MCU\inc\gpio.h
+.\output\led_spk_fan.o: ..\Lib_MCU\inc\timer32.h
+.\output\led_spk_fan.o: ..\Lib_MCU\inc\timer16.h
+.\output\led_spk_fan.o: .\inc\led_spk_fan.h

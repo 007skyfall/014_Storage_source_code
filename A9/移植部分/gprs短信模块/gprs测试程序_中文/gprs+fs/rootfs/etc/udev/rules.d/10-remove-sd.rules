@@ -1,0 +1,5 @@
+ACTION !="remove",GOTO="farsight"
+SUBSYSTEM!="block",GOTO="farsight"
+KERNEL=="mmcblk[0-9]p[0-9]",RUN+="/sbin/umount-sd.sh"
+LABEL="farsight"
+

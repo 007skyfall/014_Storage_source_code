@@ -1,0 +1,4 @@
+--cpu Cortex-M0 ".\output\startup_lpc11xx.o" ".\output\core_cm0.o" ".\output\system_lpc11xx.o" ".\output\gpio.o" ".\output\uart.o" ".\output\retarget.o" ".\output\timer32.o" ".\output\key.o" ".\output\seg7led.o" ".\output\os_cpu_a.o" ".\output\os_cpu_c.o" ".\output\os_tmr.o" ".\output\os_core.o" ".\output\os_dbg.o" ".\output\os_flag.o" ".\output\os_mbox.o" ".\output\os_mem.o" ".\output\os_mutex.o" ".\output\os_q.o" ".\output\os_sem.o" ".\output\os_task.o" ".\output\os_time.o" ".\output\main.o" ".\output\lpc11c14_it.o" ".\output\speaker_op.o" --library_type=microlib --strict --scatter ".\output\Full.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\listing\Full.map" -o ".\output\Full.axf"

@@ -1,0 +1,16 @@
+.\output\sensor.o: src\sensor.c
+.\output\sensor.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\output\sensor.o: .\inc\timeflag.h
+.\output\sensor.o: ..\Lib_MCU\inc\type.h
+.\output\sensor.o: ..\Lib_BSP\inc\myadc.h
+.\output\sensor.o: ..\Lib_BSP\inc\acc.h
+.\output\sensor.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\sensor.o: ..\Lib_BSP\inc\light.h
+.\output\sensor.o: ..\Lib_BSP\inc\temp_hum.h
+.\output\sensor.o: ..\Lib_BSP\inc\key.h
+.\output\sensor.o: ..\Lib_BSP\inc\rfid.h
+.\output\sensor.o: ..\Lib_MCU\inc\LPC11xx.h
+.\output\sensor.o: ..\Lib_MCU\inc\core_cm0.h
+.\output\sensor.o: ..\Lib_MCU\inc\system_LPC11xx.h
+.\output\sensor.o: .\inc\device.h
+.\output\sensor.o: .\inc\sensor.h

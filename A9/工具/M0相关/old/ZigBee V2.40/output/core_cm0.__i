@@ -1,0 +1,1 @@
+-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I..\Lib_MCU\inc -I..\Lib_BSP\inc -I.\inc -I "D:\Keil\ARM\INC" -I "D:\Keil\ARM\INC\NXP\LPC11xx" -o ".\output\core_cm0.o" --omf_browse ".\output\core_cm0.crf" --depend ".\output\core_cm0.d" "..\Lib_MCU\src\core_cm0.c"

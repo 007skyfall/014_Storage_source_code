@@ -1,0 +1,15 @@
+main.o: src\main.c
+main.o: C:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+main.o: ..\Lib_MCU\inc\lpc11xx.h
+main.o: ..\Lib_MCU\inc\core_cm0.h
+main.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+main.o: ..\Lib_MCU\inc\system_LPC11xx.h
+main.o: ..\Lib_MCU\inc\gpio.h
+main.o: ..\Lib_MCU\inc\uart.h
+main.o: ..\Lib_MCU\inc\ssp.h
+main.o: ..\Lib_MCU\inc\i2c.h
+main.o: ..\Lib_MCU\inc\rom_drivers.h
+main.o: ..\Lib_MCU\inc\rom_driver_CAN.h
+main.o: ..\Lib_BSP\inc\oled2864.h
+main.o: ..\Lib_BSP\inc\tools.h
+main.o: ..\Lib_BSP\inc\spi_uart.h

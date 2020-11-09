@@ -1,0 +1,18 @@
+noauth
+debug
+connect '/usr/sbin/chat -v -f /etc/ppp/peers/wcdma-chat-connect'
+/dev/ttyUSB0
+115200
+defaultroute
+noipdefault
+novj
+novjccomp
+noccp
+ipcp-accept-local
+ipcp-accept-remote
+local
+dump
+nodetach
+nocrtscts
+
+#usepeerdns

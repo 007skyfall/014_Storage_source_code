@@ -1,0 +1,4 @@
+--cpu Cortex-M0 ".\output\startup_lpc11xx.o" ".\output\core_cm0.o" ".\output\system_lpc11xx.o" ".\output\gpio.o" ".\output\timer32.o" ".\output\tools.o" ".\output\main.o" --strict --scatter ".\output\GPIO.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\listing\GPIO.map" -o ".\output\GPIO.axf"

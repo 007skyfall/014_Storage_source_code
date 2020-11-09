@@ -1,0 +1,21 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\项目\项目分发给学生资料--A9\M0相关\M0_v3.0\实验代码_新\09_实验_Sensor\Sensor V2.40\project.uvproj
+Project File Date:  03/13/2012
+
+<h2>Output:</h2>
+Build target 'Sensor_Prj'
+assembling startup_LPC11xx.s...
+--- Error: failed to execute 'BIN40\ArmAsm'
+Target not created
+Build target 'Sensor_Prj'
+assembling startup_LPC11xx.s...
+--- Error: failed to execute 'BIN40\ArmAsm'
+Target not created
+Build target 'Sensor_Prj'
+assembling startup_LPC11xx.s...
+--- Error: failed to execute 'BIN40\ArmAsm'
+Target not created

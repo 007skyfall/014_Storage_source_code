@@ -1,0 +1,201 @@
+/************************************
+协调器程序
+*************************************/
+
+const cId_t SampleApp_ClusterList[SAMPLEAPP_MAX_CLUSTERS] =
+{
+  SAMPLEAPP_LED_CLUSTERID,
+};
+
+
+//简单设备描述符
+const SimpleDescriptionFormat_t SampleApp_SimpleDesc =
+{
+  SAMPLEAPP_ENDPOINT,              //  int Endpoint;
+  SAMPLEAPP_PROFID,                //  uint16 AppProfId[2];
+  SAMPLEAPP_DEVICEID,              //  uint16 AppDeviceId[2];
+  SAMPLEAPP_DEVICE_VERSION,        //  int   AppDevVer:4;
+  SAMPLEAPP_FLAGS,                 //  int   AppFlags:4;
+  SAMPLEAPP_MAX_CLUSTERS,          //  uint8  AppNumInClusters;
+  (cId_t *)SampleApp_ClusterList,  //  uint8 *pAppInClusterList;
+  0,                                //  uint8  AppNumInClusters;
+  (cId_t *)NULL                    //  uint8 *pAppInClusterList;
+};
+
+// This is the Endpoint/Interface description.  It is defined here, but
+// filled-in in SampleApp_Init().  Another way to go would be to fill
+// in the structure here and make it a "const" (in code space).  The
+// way it's defined in this sample app it is define in RAM.
+endPointDesc_t SampleApp_epDesc;     //节点描述符
+
+/*********************************************************************
+ * EXTERNAL VARIABLES
+ */
+
+/*********************************************************************
+ * EXTERNAL FUNCTIONS
+ */
+
+/*********************************************************************
+ * LOCAL VARIABLES
+ */
+//任务优先级
+uint8 SampleApp_TaskID;   // Task ID for internal task/event processing
+                          // This variable will be received when
+                          // SampleApp_Init() is called.
+//数据发送序列号
+uint8 SampleApp_TransID;  // This is the unique message ID (counter)
+
+//unsigned char uartbuf[128] ;
+/*********************************************************************
+ * LOCAL FUNCTIONS
+ */
+
+void SampleApp_MessageMSGCB( afIncomingMSGPacket_t *pckt );
+
+//static void rxCB(uint8 port,uint8 event);
+/*********************************************************************
+ * NETWORK LAYER CALLBACKS
+ */
+
+/*********************************************************************
+ * PUBLIC FUNCTIONS
+ */
+
+/*********************************************************************
+ * @fn      SampleApp_Init
+ *
+ * @brief   Initialization function for the Generic App Task.
+ *          This is called during initialization and should contain
+ *          any application specific initialization (ie. hardware
+ *          initialization/setup, table initialization, power up
+ *          notificaiton ... ).
+ *
+ * @param   task_id - the ID assigned by OSAL.  This ID should be
+ *                    used to send messages and set timers.
+ *
+ * @return  none
+ */
+void SampleApp_Init( uint8 task_id )
+{
+  halUARTCfg_t  uartconfig;
+  //初始化任务优先级,任务的优先级由协议栈的操作系统OSAL分配
+  //这里可以查看OSAL_SampleApp.c文件下的void osalInitTasks( void )函数
+  SampleApp_TaskID = task_id;
+  SampleApp_TransID = 0;
+
+  // Fill out the endpoint description.
+  //对节点描述符进行的初始化，上述初始化较为固定，一般不需要修改
+  SampleApp_epDesc.endPoint = SAMPLEAPP_ENDPOINT;
+  SampleApp_epDesc.task_id = &SampleApp_TaskID;
+  SampleApp_epDesc.simpleDesc
+            = (SimpleDescriptionFormat_t *)&SampleApp_SimpleDesc;
+  SampleApp_epDesc.latencyReq = noLatencyReqs;
+
+  // Register the endpoint description with the AF
+  //使用afRegister函数将节点描述符进行注册，只有注册以后，才可以使用OSAL提供的系统服务
+  afRegister( &SampleApp_epDesc );
+  
+  uartconfig.configured  =  TRUE;    //打开串口
+  uartconfig.baudRate    =  HAL_UART_BR_115200;   //设置波特率为115200
+  uartconfig.flowControl =  FALSE;    //关闭流控
+  uartconfig.callBackFunc = NULL;     //
+  
+  HalUARTOpen(0,&uartconfig);
+  
+}
+
+/*********************************************************************
+ * @fn      SampleApp_ProcessEvent
+ *
+ * @brief   Generic Application Task event processor.  This function
+ *          is called to process all events for the task.  Events
+ *          include timers, messages and any other user defined events.
+ *
+ * @param   task_id  - The OSAL assigned task ID.
+ * @param   events - events to process.  This is a bit map and can
+ *                   contain more than one event.
+ *
+ * @return  none
+ */
+uint16 SampleApp_ProcessEvent( uint8 task_id, uint16 events )
+{
+  afIncomingMSGPacket_t *MSGpkt;   //定义一个消息结构体指针
+  (void)task_id;  // Intentionally unreferenced parameter
+
+  if ( events & SYS_EVENT_MSG )
+  {//从消息队列上接收消息，
+    MSGpkt = (afIncomingMSGPacket_t *)osal_msg_receive( SampleApp_TaskID );
+    while ( MSGpkt )
+    {
+      switch ( MSGpkt->hdr.event )
+      {
+        // Received when a messages is received (OTA) for this endpoint
+        case AF_INCOMING_MSG_CMD:   //传入报文类型的消息
+          SampleApp_MessageMSGCB( MSGpkt );
+          break;
+
+        default:
+          break;
+      }
+
+      // Release the memory
+      //接收到的消息存放在堆上，所示需要使用这个函数进行内存的释放
+      osal_msg_deallocate( (uint8 *)MSGpkt );
+
+      // Next - if one is available
+      //再次从消息队列中获取另外一个消息，知道将所有的消息处理完为止
+      MSGpkt = (afIncomingMSGPacket_t *)osal_msg_receive( SampleApp_TaskID );
+    }
+
+    // return unprocessed events
+    return (events ^ SYS_EVENT_MSG);
+  }
+
+  // Discard unknown events
+  return 0;
+}
+
+/*********************************************************************
+ * LOCAL FUNCTIONS
+ */
+
+/*********************************************************************
+ * @fn      SampleApp_MessageMSGCB
+ *
+ * @brief   Data message processor callback.  This function processes
+ *          any incoming data - probably from other devices.  So, based
+ *          on cluster ID, perform the intended action.
+ *
+ * @param   none
+ *
+ * @return  none
+ */
+void SampleApp_MessageMSGCB( afIncomingMSGPacket_t *pkt )
+{
+  unsigned char buffer[10];
+  
+  switch ( pkt->clusterId )
+  {
+    case SAMPLEAPP_LED_CLUSTERID:
+      //将收到的数据拷贝到缓冲区buffer中
+      osal_memcpy(buffer,pkt->cmd.Data,10);
+      HalUARTWrite(0,buffer,10);
+      break;
+  }
+}
+/*
+static void rxCB(uint8 port,uint8 event)
+{
+  HalUARTRead(0,uartbuf,8);
+  if(osal_memcmp(uartbuf,"farsight",8))
+  {
+    HalUARTWrite(0,uartbuf,8);
+  }
+}
+*/
+
+
+/**********************************************
+终端节点透传程序
+***********************************************/

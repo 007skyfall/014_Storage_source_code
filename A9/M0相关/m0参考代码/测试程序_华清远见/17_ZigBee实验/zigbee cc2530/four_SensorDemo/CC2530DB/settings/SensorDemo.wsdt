@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>SensorDemo/CollectorEB-PRO</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>317</Column0><Column1>57</Column1><Column2>36</Column2><Column3>14677020</Column3></ColumnWidths>
+      </Workspace>
+    <Build><PreferedWindows><Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Find-in-Files</Factory></Window><Window><Factory>Breakpoints</Factory></Window><Window><Factory>Debug-Log</Factory></Window></Windows></PreferedWindows><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>915</ColumnWidth1><ColumnWidth2>244</ColumnWidth2><ColumnWidth3>61</ColumnWidth3></Build><TerminalIO/><Find-in-Files><ColumnWidth0>679</ColumnWidth0><ColumnWidth1>70</ColumnWidth1><ColumnWidth2>850</ColumnWidth2><PreferedWindows><Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Build</Factory></Window><Window><Factory>Breakpoints</Factory></Window><Window><Factory>Debug-Log</Factory></Window></Windows></PreferedWindows></Find-in-Files><Debug-Log><PreferedWindows><Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Build</Factory></Window><Window><Factory>Find-in-Files</Factory></Window><Window><Factory>Breakpoints</Factory></Window></Windows></PreferedWindows></Debug-Log><Breakpoints><PreferedWindows><Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Build</Factory></Window><Window><Factory>Find-in-Files</Factory></Window><Window><Factory>Debug-Log</Factory></Window></Windows></PreferedWindows></Breakpoints></Static>
+    <Windows>
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-22587-32072</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>SensorDemo</ExpandedNode><ExpandedNode>SensorDemo/App</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd2><Tabs><Tab><Identity>TabID-19442-19828</Identity><TabName>Build</TabName><Factory>Build</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd2></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>F:\FS_11C14&#x7269;&#x8054;&#x7F51;&#x5F00;&#x53D1;&#x5e73;&#x53F0;&#x914D;&#x5957;&#x8D44;&#x6599;V4.6\&#x6D4B;&#x8BD5;&#x7A0B;&#x5e8F;_&#x534e;&#x6e05;&#x8FDC;&#x89C1;\17_ZigBee&#x5B9e;&#x9A8C;\zigbee cc2530\four_SensorDemo\Source\DemoAppCommon.c</Filename><XPos>0</XPos><YPos>64</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>F:\FS_11C14&#x7269;&#x8054;&#x7F51;&#x5F00;&#x53D1;&#x5e73;&#x53F0;&#x914D;&#x5957;&#x8D44;&#x6599;V4.6\&#x6D4B;&#x8BD5;&#x7A0B;&#x5e8F;_&#x534e;&#x6e05;&#x8FDC;&#x89C1;\17_ZigBee&#x5B9e;&#x9A8C;\zigbee cc2530\four_SensorDemo\Source\DemoCollector.c</Filename><XPos>0</XPos><YPos>108</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><ActiveTab>1</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-01388aa8><key>iaridepm.enu1</key></Toolbar-01388aa8></Sizes></Row0></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>405</Bottom><Right>447</Right><x>-2</x><y>-2</y><xscreen>-2748770</xscreen><yscreen>-1486050</yscreen><sizeHorzCX>-2147476562</sizeHorzCX><sizeHorzCY>-2147471097</sizeHorzCY><sizeVertCX>350781</sizeVertCX><sizeVertCY>588150</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>242</Bottom><Right>1282</Right><x>-2</x><y>-2</y><xscreen>1284</xscreen><yscreen>244</yscreen><sizeHorzCX>1003125</sizeHorzCX><sizeHorzCY>352601</sizeHorzCY><sizeVertCX>186719</sizeVertCX><sizeVertCY>352601</sizeVertCY></Rect></Wnd2></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

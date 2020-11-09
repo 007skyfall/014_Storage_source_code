@@ -1,0 +1,82 @@
+Dependencies for Project 'project', Target 'Target 1': (DO NOT MODIFY !)
+F (.\startup_LPC11xx.s)(0x53CB0FD8)(--cpu Cortex-M0 -g --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC11xx --list "startup_LPC11xx.lst" --xref -o "startup_LPC11xx.o" --depend "startup_LPC11xx.d")
+F (..\Lib_MCU\src\core_cm0.c)(0x53CB0FD6)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I..\Lib_MCU\inc -I..\Lib_BSP\inc -I.\inc -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC11xx -o "core_cm0.o" --omf_browse "core_cm0.crf" --depend "core_cm0.d")
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+F (..\Lib_MCU\src\system_LPC11xx.c)(0x53CB0FD6)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I..\Lib_MCU\inc -I..\Lib_BSP\inc -I.\inc -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC11xx -o "system_lpc11xx.o" --omf_browse "system_lpc11xx.crf" --depend "system_lpc11xx.d")
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (..\Lib_MCU\inc\LPC11xx.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\core_cm0.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\system_LPC11xx.h)(0x53CB0FD6)
+F (..\Lib_MCU\src\gpio.c)(0x53CB0FD6)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I..\Lib_MCU\inc -I..\Lib_BSP\inc -I.\inc -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC11xx -o "gpio.o" --omf_browse "gpio.crf" --depend "gpio.d")
+I (..\Lib_MCU\inc\LPC11xx.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\core_cm0.h)(0x53CB0FD6)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (..\Lib_MCU\inc\system_LPC11xx.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\gpio.h)(0x53CB0FD6)
+F (..\Lib_MCU\src\uart.c)(0x53CB0FD6)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I..\Lib_MCU\inc -I..\Lib_BSP\inc -I.\inc -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC11xx -o "uart.o" --omf_browse "uart.crf" --depend "uart.d")
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdarg.h)(0x4EB0D27C)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x4EB0D286)
+I (..\Lib_MCU\inc\LPC11xx.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\core_cm0.h)(0x53CB0FD6)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (..\Lib_MCU\inc\system_LPC11xx.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\uart.h)(0x53CB0FD6)
+F (..\Lib_MCU\src\retarget.c)(0x53CB0FD6)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I..\Lib_MCU\inc -I..\Lib_BSP\inc -I.\inc -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC11xx -o "retarget.o" --omf_browse "retarget.crf" --depend "retarget.d")
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x4EB0D286)
+I (C:\Keil\ARM\ARMCC\bin\..\include\rt_misc.h)(0x4EB0D280)
+I (..\Lib_MCU\inc\LPC11xx.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\core_cm0.h)(0x53CB0FD6)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (..\Lib_MCU\inc\system_LPC11xx.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\uart.h)(0x53CB0FD6)
+F (..\Lib_MCU\src\ssp.c)(0x53CB0FD6)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I..\Lib_MCU\inc -I..\Lib_BSP\inc -I.\inc -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC11xx -o "ssp.o" --omf_browse "ssp.crf" --depend "ssp.d")
+I (..\Lib_MCU\inc\LPC11xx.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\core_cm0.h)(0x53CB0FD6)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (..\Lib_MCU\inc\system_LPC11xx.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\gpio.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\ssp.h)(0x53CB0FD6)
+F (..\Lib_MCU\src\i2c.c)(0x53CB0FD6)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I..\Lib_MCU\inc -I..\Lib_BSP\inc -I.\inc -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC11xx -o "i2c.o" --omf_browse "i2c.crf" --depend "i2c.d")
+I (..\Lib_MCU\inc\lpc11xx.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\core_cm0.h)(0x53CB0FD6)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (..\Lib_MCU\inc\system_LPC11xx.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\type.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\i2c.h)(0x53CB0FD6)
+F (..\Lib_BSP\src\tools.c)(0x53CB0FD6)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I..\Lib_MCU\inc -I..\Lib_BSP\inc -I.\inc -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC11xx -o "tools.o" --omf_browse "tools.crf" --depend "tools.d")
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x4EB0D286)
+I (..\Lib_MCU\inc\lpc11xx.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\core_cm0.h)(0x53CB0FD6)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (..\Lib_MCU\inc\system_LPC11xx.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\gpio.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\uart.h)(0x53CB0FD6)
+F (..\Lib_BSP\src\oled2864.c)(0x53CB0FD6)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I..\Lib_MCU\inc -I..\Lib_BSP\inc -I.\inc -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC11xx -o "oled2864.o" --omf_browse "oled2864.crf" --depend "oled2864.d")
+I (..\Lib_MCU\inc\lpc11xx.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\core_cm0.h)(0x53CB0FD6)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (..\Lib_MCU\inc\system_LPC11xx.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\gpio.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\ssp.h)(0x53CB0FD6)
+F (.\src\main.c)(0x553C40FC)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I..\Lib_MCU\inc -I..\Lib_BSP\inc -I.\inc -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC11xx -o "main.o" --omf_browse "main.crf" --depend "main.d")
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x4EB0D286)
+I (..\Lib_MCU\inc\lpc11xx.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\core_cm0.h)(0x53CB0FD6)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (..\Lib_MCU\inc\system_LPC11xx.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\gpio.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\uart.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\ssp.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\i2c.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\rom_drivers.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\rom_driver_CAN.h)(0x53CB0FD6)
+I (..\Lib_BSP\inc\oled2864.h)(0x53CB0FD6)
+I (..\Lib_BSP\inc\tools.h)(0x53CB0FD6)
+I (..\Lib_BSP\inc\spi_uart.h)(0x53CB0FD6)
+F (.\src\lpc11c14_it.c)(0x53CB0FD8)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I..\Lib_MCU\inc -I..\Lib_BSP\inc -I.\inc -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC11xx -o "lpc11c14_it.o" --omf_browse "lpc11c14_it.crf" --depend "lpc11c14_it.d")
+I (..\Lib_MCU\inc\LPC11xx.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\core_cm0.h)(0x53CB0FD6)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (..\Lib_MCU\inc\system_LPC11xx.h)(0x53CB0FD6)
+I (..\Lib_MCU\inc\gpio.h)(0x53CB0FD6)
+I (..\Lib_BSP\inc\spi_uart.h)(0x53CB0FD6)

@@ -1,0 +1,30 @@
+*** Creating Trace Output File '.\output\Sensor_Prj.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\output\startup_lpc11xx.o"'
+### List of Objects: adding '".\output\core_cm0.o"'
+### List of Objects: adding '".\output\system_lpc11xx.o"'
+### List of Objects: adding '".\output\gpio.o"'
+### List of Objects: adding '".\output\uart.o"'
+### List of Objects: adding '".\output\retarget.o"'
+### List of Objects: adding '".\output\ssp.o"'
+### List of Objects: adding '".\output\tools.o"'
+### List of Objects: adding '".\output\oled2864.o"'
+### List of Objects: adding '".\output\temp_hum.o"'
+### List of Objects: adding '".\output\main.o"'
+### List of Objects: adding '".\output\lpc11c14_it.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M0 ".\output\startup_lpc11xx.o" ".\output\core_cm0.o" ".\output\system_lpc11xx.o" ".\output\gpio.o" ".\output\uart.o" ".\output\retarget.o" ".\output\ssp.o" ".\output\tools.o" ".\output\oled2864.o" ".\output\temp_hum.o" ".\output\main.o" ".\output\lpc11c14_it.o" --strict --scatter ".\output\Sensor_Prj.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\listing\Sensor_Prj.map" -o ".\output\Sensor_Prj.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\output\Sensor_Prj.axf'
+### ADS-LD Command File: '.\output\Sensor_Prj.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\output\Sensor_Prj.lnp', Handle=0x000002E0
+### Writing '.lnp' file
+### ADS-LD Command file '.\output\Sensor_Prj.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

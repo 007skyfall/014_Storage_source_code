@@ -1,0 +1,462 @@
+###############################################################################
+#                                                                             #
+# IAR C/C++ Compiler V7.51A/W32 for 8051                14/Jan/2014  11:35:10 #
+# Copyright 2004-2009 IAR Systems AB.                                         #
+#                                                                             #
+#    Core               =  plain                                              #
+#    Code model         =  banked                                             #
+#    Data model         =  large                                              #
+#    Calling convention =  xdata reentrant                                    #
+#    Constant location  =  data_rom                                           #
+#    Dptr setup         =  1,16                                               #
+#    Source file        =  E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\usr_code\src\usr_ #
+#                          code.c                                             #
+#    Command line       =  -f E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14 #
+#                          ÎïÁªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁ #
+#                          ªÍø¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\ #
+#                          Projects\zstack\Utilities\SerialApp\CC2530DB\..\.. #
+#                          \..\Tools\CC2530DB\f8wEndev.cfg (-DCPU32MHZ        #
+#                          -DROOT=__near_func -DBLINK_LEDS) -f                #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\..\..\.. #
+#                          \Tools\CC2530DB\f8wConfig.cfg (-DSECURE=0          #
+#                          -DZG_SECURE_DYNAMIC=0 -DREFLECTOR                  #
+#                          -DDEFAULT_CHANLIST=0x00000800                      #
+#                          -DZDAPP_CONFIG_PAN_ID=0xFFFF                       #
+#                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
+#                          SK=0x007F -DBEACON_REQUEST_DELAY=100               #
+#                          -DBEACON_REQ_DELAY_MASK=0x00FF                     #
+#                          -DROUTE_EXPIRY_TIME=30 -DAPSC_ACK_WAIT_DURATION_PO #
+#                          LLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7             #
+#                          -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3    #
+#                          -DNWK_MAX_DATA_RETRIES=2                           #
+#                          -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9         #
+#                          -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40           #
+#                          -DNWK_MAX_BINDING_ENTRIES=4                        #
+#                          -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01,  #
+#                          0x03, 0x05, 0x07, 0x09, 0x0B, 0x0D, 0x0F, 0x00,    #
+#                          0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C, 0x0D}"         #
+#                          -DMAC_MAX_FRAME_SIZE=116 "-DCONST=const __code"    #
+#                          -DGENERIC=__generic -DRFD_RCVC_ALWAYS_ON=FALSE     #
+#                          -DPOLL_RATE=1000 -DQUEUED_POLL_RATE=100            #
+#                          -DRESPONSE_POLL_RATE=100) -DREJOIN_POLL_RATE=440   #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\usr_code\src\usr_ #
+#                          code.c -D ZIGBEEPRO -D NWK_AUTO_POLL -D            #
+#                          HAL_UART=TRUE -D SERIAL_APP_PORT=0 -D              #
+#                          LCD_SUPPORTED -D ZAPP_P1 -D xPOWER_SAVING -D       #
+#                          SOFT_START=TRUE -lC E:\ShengLi\01-Farsight\10-ÎïÁª #
+#                          ÍøÊ¦×Ê°à\FS_11C14ÎïÁªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²â #
+#                          ÊÔ\31_»ùÓÚQTµÄÎïÁªÍø¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC #
+#                          2530-2.3.0-1.4.0\Projects\zstack\Utilities\SerialA #
+#                          pp\CC2530DB\EndDeviceEB-Pro\List\ -lA              #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\EndDevic #
+#                          eEB-Pro\List\ --diag_suppress Pe001,Pa010 -o       #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\EndDevic #
+#                          eEB-Pro\Obj\ -e --require_prototypes --debug       #
+#                          --core=plain --dptr=16,1 --data_model=large        #
+#                          --code_model=banked --calling_convention=xdata_ree #
+#                          ntrant --place_constants=data_rom                  #
+#                          --nr_virtual_regs 16 -I E:\ShengLi\01-Farsight\10- #
+#                          ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´ #
+#                          Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStac #
+#                          k-CC2530-2.3.0-1.4.0\Projects\zstack\Utilities\Ser #
+#                          ialApp\CC2530DB\ -I E:\ShengLi\01-Farsight\10-ÎïÁª #
+#                          ÍøÊ¦×Ê°à\FS_11C14ÎïÁªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²â #
+#                          ÊÔ\31_»ùÓÚQTµÄÎïÁªÍø¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC #
+#                          2530-2.3.0-1.4.0\Projects\zstack\Utilities\SerialA #
+#                          pp\CC2530DB\..\SOURCE\ -I                          #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\..\..\.. #
+#                          \ZMAIN\TI2530DB\ -I E:\ShengLi\01-Farsight\10-ÎïÁª #
+#                          ÍøÊ¦×Ê°à\FS_11C14ÎïÁªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²â #
+#                          ÊÔ\31_»ùÓÚQTµÄÎïÁªÍø¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC #
+#                          2530-2.3.0-1.4.0\Projects\zstack\Utilities\SerialA #
+#                          pp\CC2530DB\..\..\..\..\..\COMPONENTS\MT\ -I       #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\..\..\.. #
+#                          \..\..\COMPONENTS\HAL\INCLUDE\ -I                  #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\..\..\.. #
+#                          \..\..\COMPONENTS\HAL\TARGET\CC2530EB\ -I          #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\..\..\.. #
+#                          \..\..\COMPONENTS\OSAL\MCU\CCSOC\ -I               #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\..\..\.. #
+#                          \..\..\COMPONENTS\OSAL\INCLUDE\ -I                 #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\..\..\.. #
+#                          \..\..\COMPONENTS\STACK\AF\ -I                     #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\..\..\.. #
+#                          \..\..\COMPONENTS\STACK\NWK\ -I                    #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\..\..\.. #
+#                          \..\..\COMPONENTS\STACK\SEC\ -I                    #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\..\..\.. #
+#                          \..\..\COMPONENTS\STACK\SAPI\ -I                   #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\..\..\.. #
+#                          \..\..\COMPONENTS\STACK\SYS\ -I                    #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\..\..\.. #
+#                          \..\..\COMPONENTS\STACK\ZDO\ -I                    #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\..\..\.. #
+#                          \..\..\COMPONENTS\ZMAC\F8W\ -I                     #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\..\..\.. #
+#                          \..\..\COMPONENTS\ZMAC\ -I                         #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\..\..\.. #
+#                          \..\..\COMPONENTS\SERVICES\SADDR\ -I               #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\..\..\.. #
+#                          \..\..\COMPONENTS\SERVICES\SDATA\ -I               #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\..\..\.. #
+#                          \..\..\COMPONENTS\MAC\INCLUDE\ -I                  #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\..\..\.. #
+#                          \..\..\COMPONENTS\MAC\HIGH_LEVEL\ -I               #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\..\..\.. #
+#                          \..\..\COMPONENTS\MAC\LOW_LEVEL\srf04\ -I          #
+#                          E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\..\..\.. #
+#                          \..\..\COMPONENTS\MAC\LOW_LEVEL\srf04\SINGLE_CHIP\ #
+#                           -I E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C1 #
+#                          4ÎïÁªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎï #
+#                          ÁªÍø¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0 #
+#                          \Projects\zstack\Utilities\SerialApp\CC2530DB\..\u #
+#                          sr_code\include\ -I "D:\Program Files\IAR          #
+#                          Systems\Embedded Workbench 5.3\8051\INC\" -I       #
+#                          "D:\Program Files\IAR Systems\Embedded Workbench   #
+#                          5.3\8051\INC\CLIB\" -Ohz                           #
+#    List file          =  E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\EndDevic #
+#                          eEB-Pro\List\usr_code.lst                          #
+#    Object file        =  E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁ #
+#                          ªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø #
+#                          ¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Pro #
+#                          jects\zstack\Utilities\SerialApp\CC2530DB\EndDevic #
+#                          eEB-Pro\Obj\usr_code.r51                           #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+E:\ShengLi\01-Farsight\10-ÎïÁªÍøÊ¦×Ê°à\FS_11C14ÎïÁªÍø¿ª·¢Æ½Ì¨ÅäÌ××ÊÁÏV6.0\Ô´Âë²âÊÔ\31_»ùÓÚQTµÄÎïÁªÍø¹ÜÀíÏµÍ³_WindowsÏµÍ³\ZStack-CC2530-2.3.0-1.4.0\Projects\zstack\Utilities\SerialApp\usr_code\src\usr_code.c
+      1          #include "usr_code.h"
+      2          #include  "hal_mcu.h"
+
+   \                                 In  segment SFR_AN, at 0x90
+   \   union <unnamed> volatile __sfr _A_P1
+   \                     _A_P1:
+   \   000000                DS 1
+      3          #include  "hal_defs.h"
+      4          #include  "hal_types.h"
+      5          #include  "hal_timer.h"
+      6          #include "OnBoard.h"
+      7          
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+      8          uint8 *con_ok = "timer init  ok";
+   \                     con_ok:
+   \   000000                DS 2
+   \   000002                REQUIRE `?<Initializer for con_ok>`
+   \   000002                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+      9          uint8 *con_err = "timer init err";
+   \                     con_err:
+   \   000000                DS 2
+   \   000002                REQUIRE `?<Initializer for con_err>`
+   \   000002                REQUIRE __INIT_XDATA_I
+     10          
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     11          volatile uint16 time_countval = 0;
+   \                     time_countval:
+   \   000000                DS 2
+   \   000002                REQUIRE __INIT_XDATA_Z
+     12          
+     13          extern uint8 halTimerSetCount (uint8 hwtimerid, uint32 timePerTick);
+     14          extern uint8 halTimerSetPrescale (uint8 cc2430id, uint8 prescale);
+     15          extern uint8 halTimerSetOpMode (uint8 cc2430id, uint8 opMode);
+     16          extern uint8 halTimerSetChannelMode (uint8 cc2430id, uint8 channelMode);
+     17          extern void halTimerSendCallBack (uint8 timerId, uint8 channel, uint8 channelMode);
+     18          
+     19          
+     20          
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     21          void timer_init(void)
+   \                     timer_init:
+     22          {
+   \   000000   74F4         MOV     A,#-0xc
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 12
+   \   000005                ; Auto size: 0
+     23            uint8 time_config;
+     24            //halTimerSetCount(HAL_TIMER_0, TICK_TIME);
+     25            //halTimerSetPrescale(HAL_TIMER_0, 0x10 << 2);
+     26            //halTimerSetOpMode(HAL_TIMER_1, HAL_TIMER_MODE_CTC);
+     27            //halTimerSetChannelMode(HAL_TIMER_0, HAL_TIMER_CH_MODE_OVERFLOW);
+     28            
+     29            time_config = HalTimerConfig(OSAL_TIMER, HAL_TIMER_MODE_CTC, HAL_TIMER_CHANNEL_SINGLE, HAL_TIMER_CH_MODE_OUTPUT_COMPARE, true, timer_overflow); 
+     30            //after the halTimerRemap , the parameter "HAL_TIMER_0" is remapped as "HAL_TIMER_3"
+     31            
+     32            if(time_config != HAL_TIMER_OK)
+   \   000005                ; Setup parameters for call to function HalTimerConfig
+   \   000005   75....       MOV     ?V0 + 0,#(??timer_overflow?relay & 0xff)
+   \   000008   75....       MOV     ?V0 + 1,#((??timer_overflow?relay >> 8) & 0xff)
+   \   00000B   78..         MOV     R0,#?V0 + 0
+   \   00000D   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   000010   7D01         MOV     R5,#0x1
+   \   000012   7C02         MOV     R4,#0x2
+   \   000014   7B01         MOV     R3,#0x1
+   \   000016   7A02         MOV     R2,#0x2
+   \   000018   7902         MOV     R1,#0x2
+   \   00001A   12....       LCALL   ??HalTimerConfig?relay
+   \   00001D   7402         MOV     A,#0x2
+   \   00001F   12....       LCALL   ?DEALLOC_XSTACK8
+   \   000022   E9           MOV     A,R1
+   \   000023   7C14         MOV     R4,#0x14
+   \   000025   7D00         MOV     R5,#0x0
+   \   000027   6008         JZ      ??timer_init_0
+     33            {
+     34              HalUARTWrite(HAL_UART_PORT_0, con_err, 20);
+   \   000029                ; Setup parameters for call to function HalUARTWrite
+   \   000029   90....       MOV     DPTR,#con_err
+   \   00002C   12....       LCALL   ?Subroutine0 & 0xFFFF
+     35              return;
+   \                     ??CrossCallReturnLabel_0:
+   \   00002F   801B         SJMP    ??timer_init_1
+     36            }
+     37            else
+     38              HalUARTWrite(HAL_UART_PORT_0, con_ok, 20);
+   \                     ??timer_init_0:
+   \   000031                ; Setup parameters for call to function HalUARTWrite
+   \   000031   90....       MOV     DPTR,#con_ok
+   \   000034   12....       LCALL   ?Subroutine0 & 0xFFFF
+     39                
+     40            
+     41            //HalTimerInterruptEnable(OSAL_TIMER, HAL_TIMER_CH_MODE_OVERFLOW, true);
+     42            HalTimerStart(OSAL_TIMER, TICK_TIME); 
+   \                     ??CrossCallReturnLabel_1:
+   \   000037                ; Setup parameters for call to function HalTimerStart
+   \   000037   90....       MOV     DPTR,#__Constant_3e8
+   \   00003A   78..         MOV     R0,#?V0 + 0
+   \   00003C   12....       LCALL   ?L_MOV_X
+   \   00003F   AA..         MOV     R2,?V0 + 0
+   \   000041   AB..         MOV     R3,?V0 + 1
+   \   000043   AC..         MOV     R4,?V0 + 2
+   \   000045   AD..         MOV     R5,?V0 + 3
+   \   000047   7902         MOV     R1,#0x2
+   \   000049   12....       LCALL   ??HalTimerStart?relay
+     43          }
+   \                     ??timer_init_1:
+   \   00004C   7F04         MOV     R7,#0x4
+   \   00004E   02....       LJMP    ?BANKED_LEAVE_XDATA
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine0:
+   \   000000   E0           MOVX    A,@DPTR
+   \   000001   FA           MOV     R2,A
+   \   000002   A3           INC     DPTR
+   \   000003   E0           MOVX    A,@DPTR
+   \   000004   FB           MOV     R3,A
+   \   000005   7900         MOV     R1,#0x0
+   \   000007   12....       LCALL   ??HalUARTWrite?relay
+   \   00000A   22           RET
+     44          
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     45          void timer_overflow(uint8 timerId, uint8 channel, uint8 channelMode)
+   \                     timer_overflow:
+     46          {
+   \   000000   C082         PUSH    DPL
+   \   000002   C083         PUSH    DPH
+   \   000004                ; Saved register size: 2
+   \   000004                ; Auto size: 0
+     47            if(time_countval >= 1000)
+   \   000004   90....       MOV     DPTR,#time_countval
+   \   000007   C3           CLR     C
+   \   000008   E0           MOVX    A,@DPTR
+   \   000009   94E8         SUBB    A,#-0x18
+   \   00000B   A3           INC     DPTR
+   \   00000C   E0           MOVX    A,@DPTR
+   \   00000D   9403         SUBB    A,#0x3
+   \   00000F   4011         JC      ??timer_overflow_0
+     48            {
+     49              time_countval = 0;
+   \   000011   90....       MOV     DPTR,#time_countval
+   \   000014   E4           CLR     A
+   \   000015   F0           MOVX    @DPTR,A
+   \   000016   A3           INC     DPTR
+   \   000017   F0           MOVX    @DPTR,A
+     50              HAL_TOGGLE_LED1();
+   \   000018   A290         MOV     C,0x90.0
+   \   00001A   5004         JNC     ??timer_overflow_1
+   \   00001C   C290         CLR     0x90.0
+   \   00001E   8002         SJMP    ??timer_overflow_0
+   \                     ??timer_overflow_1:
+   \   000020   D290         SETB    0x90.0
+     51            }
+     52          }
+   \                     ??timer_overflow_0:
+   \   000022   D083         POP     DPH
+   \   000024   D082         POP     DPL
+   \   000026   02....       LJMP    ?BRET
+   \   000029                REQUIRE _A_P1
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for con_ok>`:
+   \   000000   ....         DW `?<Constant "timer init  ok">`
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for con_err>`:
+   \   000000   ....         DW `?<Constant "timer init err">`
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??timer_init?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    timer_init
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??timer_overflow?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    timer_overflow
+
+   \                                 In  segment XDATA_ROM_C, align 1
+   \                     `?<Constant "timer init  ok">`:
+   \   000000   74696D65     DB "timer init  ok"
+   \            7220696E
+   \            69742020
+   \            6F6B00  
+
+   \                                 In  segment XDATA_ROM_C, align 1
+   \                     `?<Constant "timer init err">`:
+   \   000000   74696D65     DB "timer init err"
+   \            7220696E
+   \            69742065
+   \            727200  
+
+   \                                 In  segment XDATA_ROM_C, align 1
+   \                     __Constant_3e8:
+   \   000000   E8030000     DD 1000
+     53          
+     54          
+     55          
+     56          
+     57          
+     58          
+     59          
+     60          
+     61          
+     62          
+     63          
+     64          
+
+   Maximum stack usage in bytes:
+
+     Function            ISTACK PSTACK XSTACK
+     --------            ------ ------ ------
+     timer_init              0      0     14
+       -> HalTimerConfig     0      0     28
+       -> HalUARTWrite       0      0     24
+       -> HalUARTWrite       0      0     24
+       -> HalTimerStart      0      0     24
+     timer_overflow          2      0      0
+
+
+   Segment part sizes:
+
+     Function/Label               Bytes
+     --------------               -----
+     _A_P1                           1
+     con_ok                          2
+     con_err                         2
+     time_countval                   2
+     timer_init                     81
+     ?Subroutine0                   11
+     timer_overflow                 41
+     ?<Initializer for con_ok>       2
+     ?<Initializer for con_err>      2
+     ??timer_init?relay              6
+     ??timer_overflow?relay          6
+     ?<Constant "timer init  ok">   15
+     ?<Constant "timer init err">   15
+     __Constant_3e8                  4
+
+ 
+ 133 bytes in segment BANKED_CODE
+  12 bytes in segment BANK_RELAYS
+   1 byte  in segment SFR_AN
+   4 bytes in segment XDATA_I
+   4 bytes in segment XDATA_ID
+  34 bytes in segment XDATA_ROM_C
+   2 bytes in segment XDATA_Z
+ 
+ 149 bytes of CODE  memory
+  30 bytes of CONST memory (+ 4 bytes shared)
+   0 bytes of DATA  memory (+ 1 byte  shared)
+   6 bytes of XDATA memory
+
+Errors: none
+Warnings: none

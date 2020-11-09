@@ -1,0 +1,13 @@
+.\output\device.o: src\device.c
+.\output\device.o: .\inc\led_spk_fan.h
+.\output\device.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\device.o: ..\Lib_BSP\inc\seg7led.h
+.\output\device.o: ..\Lib_MCU\inc\LPC11xx.h
+.\output\device.o: ..\Lib_MCU\inc\core_cm0.h
+.\output\device.o: ..\Lib_MCU\inc\system_LPC11xx.h
+.\output\device.o: ..\Lib_MCU\inc\gpio.h
+.\output\device.o: .\inc\zigbee.h
+.\output\device.o: ..\Lib_BSP\inc\oled2864.h
+.\output\device.o: .\inc\device.h
+.\output\device.o: ..\Lib_BSP\inc\tools.h
+.\output\device.o: ..\Lib_MCU\inc\type.h

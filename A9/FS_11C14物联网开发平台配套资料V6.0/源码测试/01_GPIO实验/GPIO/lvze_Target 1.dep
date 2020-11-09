@@ -1,0 +1,2 @@
+Dependencies for Project 'lvze', Target 'Target 1': (DO NOT MODIFY !)
+F (.\startup_LPC11xx.s)(0x4E77FD04)(--cpu Cortex-M0 -g --apcs=interwork -I "C:\Keil\ARM\CMSIS\Include" -I "C:\Keil\ARM\INC\NXP\LPC11xx" --list "startup_LPC11xx.lst" --xref -o "startup_LPC11xx.o" --depend "startup_LPC11xx.d")

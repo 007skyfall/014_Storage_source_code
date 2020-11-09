@@ -1,0 +1,3 @@
+ACTION!="add",GOTO="farsight"
+KERNEL=="sd[a-z][0-9]",RUN+="/sbin/mount-usb.sh %k"
+LABEL="farsight"

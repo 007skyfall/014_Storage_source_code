@@ -1,0 +1,16 @@
+.\output\main.o: src\main.c
+.\output\main.o: ..\Lib_MCU\inc\lpc11xx.h
+.\output\main.o: ..\Lib_MCU\inc\core_cm0.h
+.\output\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\main.o: ..\Lib_MCU\inc\system_LPC11xx.h
+.\output\main.o: ..\Lib_MCU\inc\gpio.h
+.\output\main.o: ..\Lib_MCU\inc\uart.h
+.\output\main.o: ..\Lib_MCU\inc\timer32.h
+.\output\main.o: .\inc\timeflag.h
+.\output\main.o: ..\Lib_BSP\inc\tools.h
+.\output\main.o: .\inc\sensor.h
+.\output\main.o: .\inc\device.h
+.\output\main.o: .\inc\control.h
+.\output\main.o: ..\Lib_BSP\inc\key.h
+.\output\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\output\main.o: ..\Lib_BSP\inc\oled2864.h

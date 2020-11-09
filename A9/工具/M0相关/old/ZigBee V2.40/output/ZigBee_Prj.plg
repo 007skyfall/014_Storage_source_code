@@ -1,0 +1,24 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+G:\项目\物联网典型案例\刀塔团队资料（包括相应的制作工具）\tools\M0相关\ZigBee V2.40\project.uvproj
+Project File Date:  03/13/2012
+
+<h2>Output:</h2>
+Build target 'ZigBee_Prj'
+assembling startup_LPC11xx.s...
+startup_LPC11xx.s: error: A1023E: File "..\Lib_MCU\src\startup_LPC11xx.s" could not be opened: No such file or directory
+startup_LPC11xx.s: 1 Error, 0 Warnings
+Target not created
+Build target 'ZigBee_Prj'
+assembling startup_LPC11xx.s...
+startup_LPC11xx.s: error: A1023E: File "..\Lib_MCU\src\startup_LPC11xx.s" could not be opened: No such file or directory
+startup_LPC11xx.s: 1 Error, 0 Warnings
+Target not created
+Build target 'ZigBee_Prj'
+compiling core_cm0.c...
+core_cm0.c: Error:  #5: cannot open source input file "..\Lib_MCU\src\core_cm0.c": No such file or directory
+core_cm0.c: ..\Lib_MCU\src\core_cm0.c: 0 warnings, 1 error
+Target not created

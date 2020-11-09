@@ -1,0 +1,24 @@
+
+1.
+修改用户的电话号码：
+vim gprs.c
+修改150行：
+char *number="添加自己的号码"
+
+
+
+2.
+编译程序：
+arm-none-linux-gnueabi-gcc gprs.c testgprs.c -o test
+
+(
+发送短信：
+
+at命令：
+
+AT
+AT+CMGF=1
+AT+CMGS=xxxxxxxxxx
+>test [ctr+z]
+
+)

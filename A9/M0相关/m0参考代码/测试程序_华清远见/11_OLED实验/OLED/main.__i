@@ -1,0 +1,1 @@
+-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork -I..\Lib_MCU\inc -I..\Lib_BSP\inc -I.\inc -I "C:\Keil\ARM\CMSIS\Include" -I "C:\Keil\ARM\INC\NXP\LPC11xx" -o "main.o" --omf_browse "main.crf" --depend "main.d" "src\main.c"

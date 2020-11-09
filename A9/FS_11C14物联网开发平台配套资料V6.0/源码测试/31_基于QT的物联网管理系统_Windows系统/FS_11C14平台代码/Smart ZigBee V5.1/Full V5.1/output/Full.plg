@@ -1,0 +1,15 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\ShengLi\01-Farsight\10-物联网师资班\FS_11C14物联网开发平台配套资料V6.0\源码测试\31_基于QT的物联网管理系统_Windows系统\FS_11C14平台代码\Smart ZigBee V5.1\Full V5.1\project.uvproj
+Project File Date:  01/14/2014
+
+<h2>Output:</h2>
+Load "E:\\ShengLi\\01-Farsight\\10-物联网师资班\\FS_11C14物联网开发平台配套资料V6.0\\源码测试\\31_基于QT的物联网管理系统_Windows系统\\FS_11C14平台代码\\Smart ZigBee V5.1\\Full V5.1\\output\\Full.AXF" 
+*** Error: 'D:\Program Files\Keil\ARM\BIN\coocox-agdi.dll' invalid peripheral driver
+Load "E:\\ShengLi\\01-Farsight\\10-物联网师资班\\FS_11C14物联网开发平台配套资料V6.0\\源码测试\\31_基于QT的物联网管理系统_Windows系统\\FS_11C14平台代码\\Smart ZigBee V5.1\\Full V5.1\\output\\Full.AXF" 
+Erasing Done.
+Programming Done: 23.48 KByte/s
+Verify Done.
